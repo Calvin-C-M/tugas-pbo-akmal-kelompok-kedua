@@ -9,6 +9,7 @@ ANGGOTA KELOMPOK:
 */
 
 #include <iostream>
+#include "Student.cpp"
 
 using namespace std;
 
