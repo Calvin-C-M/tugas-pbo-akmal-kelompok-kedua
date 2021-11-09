@@ -61,11 +61,11 @@ public class Student extends Person {
 
     public void print() {
         super.print();
-        System.out.println("NPM = " + this.npm);
-        System.out.println("Nilai Penguji 1 = " + this.penguji1.getNilai());
-        System.out.println("Nilai Penguji 2 = " + this.penguji2.getNilai());
-        System.out.println("Nilai Pembimbing = " + this.pembimbing.getNilai());
-        System.out.println("Nilai Sidang = " + this.hitungNilaiSidang());
-        System.out.println("Huruf Mutu = " + this.getHurufMutu(this.hitungNilaiSidang()));
+        System.out.println("NPM\t\t=" + this.npm);
+        System.out.println("Nilai Penguji 1\t=" + this.penguji1.getNilai());
+        System.out.println("Nilai Penguji 2\t=" + this.penguji2.getNilai());
+        System.out.println("Nilai Pembimbing=" + this.pembimbing.getNilai());
+        System.out.println("Nilai Sidang\t=" + this.hitungNilaiSidang());
+        System.out.println("Huruf Mutu\t=" + this.getHurufMutu(this.hitungNilaiSidang()));
     }
 }

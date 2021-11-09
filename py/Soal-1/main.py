@@ -9,7 +9,7 @@ from nilai import Nilai
 
 class Student(Person) :
     def __init__(self) :
-        Person.__init__()
+        super().__init__()
         self.__npm=0
         self.__penguji1=Nilai()
         self.__penguji2=Nilai()
@@ -20,7 +20,7 @@ class Student(Person) :
     def getNpm(self) : return self.__npm
 
     def input(self) :
-        Person.input()
+        super().input()
         self.__npm=int(input("Masukkan NPM: "))
         self.__penguji1.input()
         self.__penguji2.input()
@@ -42,25 +42,25 @@ class Student(Person) :
         return 'T'
 
     def print(self) :
-        Person.print()
-        print("NPM = " + str(self.__npm))
-        print("Nilai Penguji 1 = " + str(self.__penguji1.getNilai()))
-        print("Nilai Penguji 2 = " + str(self.__penguji2.getNilai()))
-        print("Nilai Pembimbing = " + self.__pembimbing.getNilai())
-        print("Nilai Sidang = " + str(self.hitungNilaiSidang()))
-        print("Huruf Mutu = " + str(self.getHurufMutu(self.hitungNilaiSidang())))
+        super().print()
+        print("NPM\t\t=" + str(self.__npm))
+        print("Nilai Penguji 1\t=" + str(self.__penguji1.getNilai()))
+        print("Nilai Penguji 2\t=" + str(self.__penguji2.getNilai()))
+        print("Nilai Pembimbing\t=" + str(self.__pembimbing.getNilai()))
+        print("Nilai Sidang\t=" + str(self.hitungNilaiSidang()))
+        print("Huruf Mutu\t=" + str(self.getHurufMutu(self.hitungNilaiSidang())))
 
 mahasiswa1=Student()
 mahasiswa2=Student()
 
-print("MAHASISWA 1")
+print("===== MAHASISWA 1 =====")
 mahasiswa1.input()
 
-print("MAHASISWA 2")
+print("===== MAHASISWA 2 =====")
 mahasiswa2.input()
 
-print("MAHASISWA 1")
+print("===== MAHASISWA 1 =====")
 mahasiswa1.print()
 
-print("MAHASISWA 2")
+print("===== MAHASISWA 2 =====")
 mahasiswa2.print()

@@ -13,16 +13,16 @@ public class Main {
         Student mahasiswa1=new Student();
         Student mahasiswa2=new Student();
 
-        System.out.println("MAHASISWA 1");
+        System.out.println("===== MAHASISWA 1 =====");
         mahasiswa1.input();
 
-        System.out.println("MAHASISWA 2");
+        System.out.println("\n===== MAHASISWA 2 =====");
         mahasiswa2.input();
 
-        System.out.println("MAHASISWA 1");
+        System.out.println("\n===== MAHASISWA 1 =====");
         mahasiswa1.print();
 
-        System.out.println("MAHASISWA 2");
+        System.out.println("\n===== MAHASISWA 2 =====");
         mahasiswa2.print();
     }
 }
