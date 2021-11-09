@@ -17,15 +17,15 @@ int main() {
     Student *mahasiswa1=new Student();
     Student *mahasiswa2=new Student();
 
-    cout << "MAHASISWA 1" << endl;
+    cout << "===== MAHASISWA 1 =====" << endl;
     mahasiswa1->input();
 
-    cout << "MAHASISWA 2" << endl;
+    cout << "===== MAHASISWA 2 =====" << endl;
     mahasiswa2->input();
 
-    cout << "MAHASISWA 1" << endl;
+    cout << "===== MAHASISWA 1 =====" << endl;
     mahasiswa1->print();
 
-    cout << "MAHASISWA 2" << endl;
+    cout << "===== MAHASISWA 2 =====" << endl;
     mahasiswa2->print();
 }
