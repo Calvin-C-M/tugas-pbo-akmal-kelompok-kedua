@@ -32,7 +32,7 @@ class Student(Person) :
         nilai3=self.__pembimbing.getNilai()*0.4
         return nilai1+nilai2+nilai3
 
-    def getHurufMutu(nilai) :
+    def getHurufMutu(self,nilai) :
         if nilai > 80 and nilai <= 100 :
             return 'A'
         elif nilai > 70 and nilai <= 80 :
@@ -48,7 +48,7 @@ class Student(Person) :
         print("Nilai Penguji 2\t=" + str(self.__penguji2.getNilai()))
         print("Nilai Pembimbing\t=" + str(self.__pembimbing.getNilai()))
         print("Nilai Sidang\t=" + str(self.hitungNilaiSidang()))
-        print("Huruf Mutu\t=" + str(self.getHurufMutu(self.hitungNilaiSidang())))
+        print("Huruf Mutu\t=" + self.getHurufMutu(self.hitungNilaiSidang()))
 
 mahasiswa1=Student()
 mahasiswa2=Student()
@@ -56,11 +56,11 @@ mahasiswa2=Student()
 print("===== MAHASISWA 1 =====")
 mahasiswa1.input()
 
-print("===== MAHASISWA 2 =====")
-mahasiswa2.input()
+# print("===== MAHASISWA 2 =====")
+# mahasiswa2.input()
 
 print("===== MAHASISWA 1 =====")
 mahasiswa1.print()
 
-print("===== MAHASISWA 2 =====")
-mahasiswa2.print()
+# print("===== MAHASISWA 2 =====")
+# mahasiswa2.print()
