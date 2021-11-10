@@ -1,28 +1,62 @@
-public class Mamalia extends Makhluk{
+public class Mamalia extends Makhluk {
+    private String nama;
+    private String ukuran;
+    private int jumlahKaki;
+    private String habitat;
 
-    public void setNama(){
-        String nama = "Tidak bernama";
-        System.out.println("Nama\t\t:" + nama);
+    Mamalia() {
+        super.setJenis("Mamalia");
+        this.nama="";
+        this.ukuran="";
+        this.jumlahKaki=0;
+        this.habitat="";
     }
 
-    @Override
-    public void setJenis(){
-        String jenis = "Hewan Mamalia";
-        System.out.println("Jenis\t\t:" + jenis);
+    Mamalia(String nama, String ukuran, int jumlahKaki, String habitat) {
+        super.setJenis("Mamalia");
+        this.nama=nama;
+        this.ukuran=ukuran;
+        this.jumlahKaki=jumlahKaki;
+        this.habitat=habitat;
     }
 
-    public void setUkuran(){
-        String ukuran = "Bervariasi";
-        System.out.println("Ukuran\t\t:" + ukuran);
+    public void setNama(String nama) {
+        this.nama=nama;
     }
 
-    public void setKaki(){
-        int jmlKaki = 0;
-        System.out.println("Jumlah Kaki\t:" + jmlKaki);
+    public void setUkuran(String ukrn) {
+        this.ukuran=ukrn;
     }
 
-    public void setHabitat(){
-        String habitat = "Beragam habitat";
-        System.out.println("Habitat\t\t:" + habitat);
+    public void setJumlahKaki(int jmlKaki) {
+        this.jumlahKaki=jmlKaki;
+    }
+
+    public void setHabitat(String habitat) {
+        this.habitat=habitat;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public String getUkuran() {
+        return ukuran;
+    }
+
+    public int getJumlahKaki() {
+        return jumlahKaki;
+    }
+
+    public String getHabitat() {
+        return habitat;
+    }
+
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("Nama = " + this.nama);
+        System.out.println("Ukuran = " + this.ukuran);
+        System.out.println("Jumlah Kaki = " + this.jumlahKaki);
+        System.out.println("Habitat = " + this.habitat);
     }
 }

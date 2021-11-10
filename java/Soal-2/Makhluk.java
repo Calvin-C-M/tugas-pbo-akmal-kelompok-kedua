@@ -1,7 +1,23 @@
 public class Makhluk {
+    private String jenis;
 
-    public void setJenis(){
-        String jenis = "Makhluk hidup";
-        System.out.println("Jenis\t\t: " + jenis);
+    Makhluk() {
+        this.jenis="";
+    }
+
+    Makhluk(String jns) {
+        this.jenis=jns;
+    }
+
+    public void setJenis(String jenis) {
+        this.jenis=jenis;
+    }
+
+    public String getJenis() {
+        return this.jenis;
+    }
+
+    public void printInfo() {
+        System.out.println("Jenis = " + this.jenis);
     }
 }
