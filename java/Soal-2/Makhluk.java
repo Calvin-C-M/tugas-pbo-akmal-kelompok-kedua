@@ -18,6 +18,6 @@ public class Makhluk {
     }
 
     public void printInfo() {
-        System.out.println("Jenis = " + this.jenis);
+        System.out.println("Jenis\t\t:" + this.jenis);
     }
 }

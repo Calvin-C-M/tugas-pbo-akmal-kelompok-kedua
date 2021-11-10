@@ -54,9 +54,9 @@ public class Mamalia extends Makhluk {
 
     public void printInfo() {
         super.printInfo();
-        System.out.println("Nama = " + this.nama);
-        System.out.println("Ukuran = " + this.ukuran);
-        System.out.println("Jumlah Kaki = " + this.jumlahKaki);
-        System.out.println("Habitat = " + this.habitat);
+        System.out.println("Nama\t\t:" + this.nama);
+        System.out.println("Ukuran\t\t:" + this.ukuran);
+        System.out.println("Jumlah Kaki\t:" + this.jumlahKaki);
+        System.out.println("Habitat\t\t:" + this.habitat);
     }
 }
