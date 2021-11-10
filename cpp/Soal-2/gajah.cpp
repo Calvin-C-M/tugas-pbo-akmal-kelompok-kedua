@@ -1,13 +1,12 @@
 #include "mamalia.cpp"
 #pragma once
 
-class gajah: public mamalia
-{
+class Gajah: public Mamalia {
 public:
-    gajah() {
-        mamalia::setNama("Gajah");
-        mamalia::setUkuran("Besar");
-        mamalia::setJumlahKaki(4);
-        mamalia::setHabitat("Padang rumput");
+    Gajah() {
+        Mamalia::setNama("Gajah");
+        Mamalia::setUkuran("Besar");
+        Mamalia::setJumlahKaki(4);
+        Mamalia::setHabitat("Padang rumput");
     }
 };

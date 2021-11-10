@@ -1,24 +1,25 @@
 #include "makhluk.cpp"
 #pragma once
 
-class mamalia: public makhluk
+class Mamalia: public Makhluk
 {
 private:
     string nama;
     string ukuran;
     int jumlahKaki;
     string habitat;
+
 public:
-    mamalia() {
-        makhluk::setJenis("Mamalia");
+    Mamalia() {
+        Makhluk::setJenis("Mamalia");
         this->nama="";
         this->ukuran="";
         this->jumlahKaki=0;
         this->habitat="";
     }
 
-    mamalia(string nama, string ukuran, int jumlahKaki, string habitat) {
-        makhluk::setJenis("Mamalia");
+    Mamalia(string nama, string ukuran, int jumlahKaki, string habitat) {
+        Makhluk::setJenis("Mamalia");
         this->nama=nama;
         this->ukuran=ukuran;
         this->jumlahKaki=jumlahKaki;
@@ -58,11 +59,11 @@ public:
     }
 
     void printInfo() {
-        makhluk::printInfo();
-        cout << "Nama\t\t:" + this->nama << endl;
-        cout << "Ukuran\t\t:" + this->ukuran << endl;
-        cout << "Jumlah Kaki\t:" + this->jumlahKaki << endl;
-        cout << "Habitat\t\t:" + this->habitat << endl;
+        Makhluk::printInfo();
+        cout << "Nama\t\t:" << this->nama << endl;
+        cout << "Ukuran\t\t:" << this->ukuran << endl;
+        cout << "Jumlah Kaki\t:" << this->jumlahKaki << endl;
+        cout << "Habitat\t\t:" << this->habitat << endl;
     }
 
 };

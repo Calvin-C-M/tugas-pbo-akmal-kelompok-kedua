@@ -2,16 +2,15 @@
 
 using namespace std;
 
-class makhluk
-{
+class Makhluk {
 private:
     string jenis;
 public:
-    makhluk() {
+    Makhluk() {
         this->jenis="";
     }
 
-    makhluk(string jns) {
+    Makhluk(string jns) {
         this->jenis=jns;
     }
 
@@ -24,6 +23,6 @@ public:
     }
 
     void printInfo() {
-        cout << "Jenis\t\t:" + this->jenis << endl;
+        cout << "Jenis\t\t:" << this->jenis << endl;
     }
 };

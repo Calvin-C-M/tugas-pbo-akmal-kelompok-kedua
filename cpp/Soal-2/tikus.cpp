@@ -1,13 +1,12 @@
 #include "mamalia.cpp"
 #pragma once
 
-class tikus: public mamalia
-{
+class Tikus: public Mamalia {
 public:
-    tikus() {
-        mamalia::setNama("Tikus");
-        mamalia::setUkuran("Kecil");
-        mamalia::setJumlahKaki(4);
-        mamalia::setHabitat("Perumahan");
+    Tikus() {
+        Mamalia::setNama("Tikus");
+        Mamalia::setUkuran("Kecil");
+        Mamalia::setJumlahKaki(4);
+        Mamalia::setHabitat("Perumahan");
     }
 };

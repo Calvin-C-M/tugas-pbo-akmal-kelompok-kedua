@@ -17,18 +17,18 @@ using namespace std;
 
 int main() {
     cout << "========= GAJAH =========" << endl;
-    gajah gj;
+    Gajah gj;
     gj.printInfo();
 
     cout << "\n========= TIKUS =========" << endl;
-    tikus tk;
-    cout << "Jenis\t\t:" + tk.getJenis() << endl;
-    cout << "Nama\t\t:" + tk.getNama() << endl;
-    cout << "Ukuran\t\t:" + tk.getUkuran() << endl;
-    cout << "Jumlah Kaki\t:" + tk.getJumlahKaki() << endl;
-    cout << "Habitat\t\t:" + tk.getHabitat() << endl;
+    Tikus tk;
+    cout << "Jenis\t\t:" << tk.getJenis() << endl;
+    cout << "Nama\t\t:" << tk.getNama() << endl;
+    cout << "Ukuran\t\t:" << tk.getUkuran() << endl;
+    cout << "Jumlah Kaki\t:" << tk.getJumlahKaki() << endl;
+    cout << "Habitat\t\t:" << tk.getHabitat() << endl;
 
     cout << "\n========= PAUS ==========" << endl;
-    paus ps;
+    Paus ps;
     ps.printInfo();
 }

@@ -1,13 +1,12 @@
 #include "mamalia.cpp"
 #pragma once
 
-class paus: public mamalia
-{
+class Paus: public Mamalia {
 public:
-    paus() {
-        mamalia::setNama("Paus");
-        mamalia::setUkuran("Besar");
-        mamalia::setJumlahKaki(0);
-        mamalia::setHabitat("Laut");
+    Paus() {
+        Mamalia::setNama("Paus");
+        Mamalia::setUkuran("Besar");
+        Mamalia::setJumlahKaki(0);
+        Mamalia::setHabitat("Laut");
     }
 };
