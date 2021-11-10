@@ -49,3 +49,18 @@ class Student(Person) :
         print("Nilai Pembimbing = " + self.__pembimbing.getNilai())
         print("Nilai Sidang = " + str(self.hitungNilaiSidang()))
         print("Huruf Mutu = " + str(self.getHurufMutu(self.hitungNilaiSidang())))
+
+mahasiswa1=Student()
+mahasiswa2=Student()
+
+print("MAHASISWA 1")
+mahasiswa1.input()
+
+print("MAHASISWA 2")
+mahasiswa2.input()
+
+print("MAHASISWA 1")
+mahasiswa1.print()
+
+print("MAHASISWA 2")
+mahasiswa2.print()
