@@ -22,9 +22,9 @@ class Student(Person) :
     def input(self) :
         super().input()
         self.__npm=int(input("Masukkan NPM: "))
-        self.__penguji1.input()
-        self.__penguji2.input()
-        self.__pembimbing.input()
+        self.__penguji1.input("Penguji 1")
+        self.__penguji2.input("Penguji 2")
+        self.__pembimbing.input("Pembimbing")
 
     def hitungNilaiSidang(self) :
         nilai1=self.__penguji1.getNilai()*0.3
@@ -56,11 +56,11 @@ mahasiswa2=Student()
 print("===== MAHASISWA 1 =====")
 mahasiswa1.input()
 
-# print("===== MAHASISWA 2 =====")
-# mahasiswa2.input()
+print("===== MAHASISWA 2 =====")
+mahasiswa2.input()
 
 print("===== MAHASISWA 1 =====")
 mahasiswa1.print()
 
-# print("===== MAHASISWA 2 =====")
-# mahasiswa2.print()
+print("===== MAHASISWA 2 =====")
+mahasiswa2.print()

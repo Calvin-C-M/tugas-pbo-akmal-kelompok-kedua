@@ -6,5 +6,5 @@ class Nilai :
 
     def getNilai(self) : return self.__nilai
 
-    def input(self) :
-        self.__nilai=float(input("Masukkan nilai: "))
+    def input(self, penilai) :
+        self.__nilai=float(input("Masukkan nilai " + penilai + ": "))
