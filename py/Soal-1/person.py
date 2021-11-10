@@ -14,5 +14,5 @@ class Person :
         self.__umur=int(input("Masukkan umur: "))
 
     def print(self) :
-        print("Nama = " + self.__nama)
-        print("Umur = " + str(self.__umur))
+        print("Nama\t\t=" + self.__nama)
+        print("Umur\t\t=" + str(self.__umur))

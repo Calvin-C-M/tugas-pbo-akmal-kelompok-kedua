@@ -29,11 +29,10 @@ public class Person {
         System.out.print("Masukkan umur: ");
         this.umur=input.nextInt();
 
-        // input.close();
     }
 
     public void print() {
-        System.out.println("Nama = " + this.nama);
-        System.out.println("Umur = " + this.umur);
+        System.out.println("Nama\t\t=" + this.nama);
+        System.out.println("Umur\t\t=" + this.umur);
     }
 }
