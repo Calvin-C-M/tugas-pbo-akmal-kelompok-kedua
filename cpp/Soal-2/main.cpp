@@ -9,9 +9,26 @@ ANGGOTA KELOMPOK:
 */
 
 #include <iostream>
+#include "gajah.cpp"
+#include "tikus.cpp"
+#include "paus.cpp"
 
 using namespace std;
 
 int main() {
+    cout << "========= GAJAH =========" << endl;
+    gajah gj;
+    gj.printInfo();
 
+    cout << "\n========= TIKUS =========" << endl;
+    tikus tk;
+    cout << "Jenis\t\t:" + tk.getJenis() << endl;
+    cout << "Nama\t\t:" + tk.getNama() << endl;
+    cout << "Ukuran\t\t:" + tk.getUkuran() << endl;
+    cout << "Jumlah Kaki\t:" + tk.getJumlahKaki() << endl;
+    cout << "Habitat\t\t:" + tk.getHabitat() << endl;
+
+    cout << "\n========= PAUS ==========" << endl;
+    paus ps;
+    ps.printInfo();
 }
