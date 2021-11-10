@@ -10,8 +10,8 @@ class Student: public Person {
 
     public:
         Student() {
-            this->nama;
-            this->umur=0;
+            Person::nama="";
+            Person::umur=0;
             this->npm=0;
             this->penguji1.setNilai(0);
             this->penguji2.setNilai(0);
@@ -19,8 +19,8 @@ class Student: public Person {
         }
 
         Student(string nama, int umur, int npm, Nilai penguji1, Nilai penguji2, Nilai pembimbing) {
-            this->nama=nama;
-            this->umur=umur;
+            Person::nama=nama;
+            Person::umur=umur;
             this->npm=npm;
             this->penguji1=penguji1;
             this->penguji2=penguji2;
@@ -32,7 +32,7 @@ class Student: public Person {
         int getNpm() { return this->npm; }
 
         void input() {
-            this->input();
+            Person::input();
             cout << "Masukkan NPM: "; cin >> this->npm;
             this->penguji1.input();
             this->penguji2.input();
@@ -58,7 +58,7 @@ class Student: public Person {
         }
 
         void print() {
-            this->print();
+            Person::print();
             cout << "NPM = " << this->npm;
             cout << "Nilai Penguji 1 = " << this->penguji1.getNilai();
             cout << "Nilai Penguji 2 = " << this->penguji2.getNilai();

@@ -25,7 +25,7 @@ class Person {
         int getUmur() { return this->umur; }
 
         void input() {
-            cout << "Masukkan nama: "; getline(cin, this->nama);
+            cout << "Masukkan nama: "; cin >> this->nama;
             cout << "Masukkan umur: "; cin >> this->umur;
         }
 
