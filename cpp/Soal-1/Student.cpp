@@ -59,11 +59,11 @@ class Student: public Person {
 
         void print() {
             Person::print();
-            cout << "NPM = " << this->npm;
-            cout << "Nilai Penguji 1 = " << this->penguji1.getNilai();
-            cout << "Nilai Penguji 2 = " << this->penguji2.getNilai();
-            cout << "Nilai Pembimbing = " << this->pembimbing.getNilai();
-            cout << "Nilai Sidang = " << this->hitungNilaiSidang();
-            cout << "Huruf Mutu = " << this->getHurufMutu(this->hitungNilaiSidang());
+            cout << "NPM\t\t= " << this->npm << endl;
+            cout << "Nilai Penguji 1\t= " << this->penguji1.getNilai() << endl;
+            cout << "Nilai Penguji 2\t= " << this->penguji2.getNilai() << endl;
+            cout << "Nilai Pembimbing= " << this->pembimbing.getNilai() << endl;
+            cout << "Nilai Sidang\t= " << this->hitungNilaiSidang() << endl;
+            cout << "Huruf Mutu\t= " << this->getHurufMutu(this->hitungNilaiSidang()) << endl;
         }
 };

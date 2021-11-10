@@ -30,7 +30,7 @@ class Person {
         }
 
         void print() {
-            cout << "Nama = " << this->nama;
-            cout << "Umur = " << this->umur;
+            cout << "Nama\t\t= " << this->nama << endl;
+            cout << "Umur\t\t= " << this->umur << endl;
         }
 };

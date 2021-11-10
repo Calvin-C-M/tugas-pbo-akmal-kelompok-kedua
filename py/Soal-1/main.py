@@ -46,7 +46,7 @@ class Student(Person) :
         print("NPM\t\t=" + str(self.__npm))
         print("Nilai Penguji 1\t=" + str(self.__penguji1.getNilai()))
         print("Nilai Penguji 2\t=" + str(self.__penguji2.getNilai()))
-        print("Nilai Pembimbing\t=" + str(self.__pembimbing.getNilai()))
+        print("Nilai Pembimbing=" + str(self.__pembimbing.getNilai()))
         print("Nilai Sidang\t=" + str(self.hitungNilaiSidang()))
         print("Huruf Mutu\t=" + self.getHurufMutu(self.hitungNilaiSidang()))
 
