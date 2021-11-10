@@ -27,9 +27,9 @@ public class Person {
         this.nama=input.nextLine();
 
         System.out.print("Masukkan umur: ");
-        this.umur=Integer.parseInt(input.nextLine());
+        this.umur=input.nextInt();
 
-        input.close();
+        // input.close();
     }
 
     public void print() {

@@ -38,7 +38,7 @@ public class Student extends Person {
         this.penguji2.input();
         this.pembimbing.input();
 
-        input.close();
+        // input.close();
     }
 
     public double hitungNilaiSidang() {

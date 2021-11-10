@@ -20,7 +20,5 @@ public class Nilai {
 
         System.out.print("Masukkan nilai: ");
         this.nilai=Double.parseDouble(input.nextLine());
-
-        input.close();
     }
 }
